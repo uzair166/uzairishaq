@@ -68,10 +68,11 @@ const Terminal = props => {
 
             // wordWrap: 'break-word'
         },
-        font: {
-            color: "#fff",
+        terminalfont: {
+            // color: "#fff",
+            color: 'rgb(0, 255, 0)',
             fontFamily: "monospace",
-            fontSize: "15px",
+            // fontSize: "15px",
             textAlign: "left",
             // position: "static",
             textOverflow: 'clip'
@@ -85,9 +86,15 @@ const Terminal = props => {
                 <div style={styles.green}></div>
             </div>
             <div style={styles.screen}>
-                <pre style={styles.font}>root@10.0.0.1:~$lkjshflkjlksdjflsjklfjsdklklsjdkfljdslkjflkdsjfkldjsdljfkjhskdhfkj<br />
-                sjdhfkshdfkhsd
-                lskjdfkjslkjflsdjhfkjdhfgkljhdfskghdkshgfkldfhgkjsdhfgljkhsdkljfghskdlfjhgsjk</pre>
+                <pre style={styles.terminalfont} className="terminalfont" ><strong>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__         <br />
+&nbsp;__  __  ____      __   /\_\  _ __  <br />
+/\ \/\ \/\_ ,`\  /'__`\ \/\ \/\`'__\<br />
+\ \ \_\ \/_/  /_/\ \L\.\_\ \ \ \ \/ <br />
+&nbsp;\ \____/ /\____\ \__/.\_\\ \_\ \_\ <br />
+&nbsp;&nbsp;\/___/  \/____/\/__/\/_/ \/_/\/_/ <br />
+                                    
+                </strong></pre>
             </div>
         </div>
     )

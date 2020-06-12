@@ -41,6 +41,18 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 1280px) {
+  .terminalfont {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .terminalfont {
+    font-size: 15px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
