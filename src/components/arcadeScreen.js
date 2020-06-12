@@ -44,7 +44,7 @@ const ArcadeScreen  = props => {
         },
 
         small: {
-            fontSize: '17px', 
+            fontSize: '15px', 
             letterSpacing:'5px',
             textShadow: `-1px 0 0 #fdff2a,
               -2px 0 0 #df4a42,
@@ -54,7 +54,7 @@ const ArcadeScreen  = props => {
         },
 
         medium: {
-            fontSize: '22px', 
+            fontSize: '18px', 
             letterSpacing:'5px',
             textShadow: `-1px 0 0 #fdff2a,
               -2px 0 0 #df4a42,

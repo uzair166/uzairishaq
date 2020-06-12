@@ -45,6 +45,18 @@
   background-size: cover;
 }
 
+.redText {
+  color: red
+}
+
+.greenText {
+  color: rgb(0,255,0)
+}
+
+.blueText {
+  color: blue
+}
+
 .arcadeScreen {
   font-family: 'Press Start 2P', cursive;
 }

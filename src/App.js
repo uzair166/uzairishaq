@@ -19,7 +19,7 @@ function App() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Row md={12} className="justify-content-center" className="px-4 mb-4">
+            <Row md={12} className="justify-content-center" className="px-2 mb-4">
                 {/* <Jumbotron><h3>terminal whooo</h3></Jumbotron> */}
                 <ArcadeScreen />
             </Row>
@@ -27,7 +27,7 @@ function App() {
             <Col md={8} className="mb-5">
                 <Terminal />
             </Col>
-            <Col md={4} className="border-left">
+            <Col md={4} >
                 <Card>
                     <Card.Img variant="top" src="sp.jpeg" />
                     <Card.Body>
