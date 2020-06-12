@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Navbar, Nav, Row, Col, Jumbotron, Card, Button, ListGroup } from "react-bootstrap";
 import "./App.css";
 import Terminal from "./components/terminal";
+import ArcadeScreen from "./components/arcadeScreen";
+
 
 function App() {
     return (
@@ -17,8 +19,9 @@ function App() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Row md={12} className="justify-content-center">
-                <Jumbotron><h3>terminal whooo</h3></Jumbotron>
+            <Row md={12} className="justify-content-center" className="px-4 mb-4">
+                {/* <Jumbotron><h3>terminal whooo</h3></Jumbotron> */}
+                <ArcadeScreen />
             </Row>
             <Row>
             <Col md={8} className="mb-5">

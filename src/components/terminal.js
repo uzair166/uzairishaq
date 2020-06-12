@@ -86,15 +86,22 @@ const Terminal = props => {
                 <div style={styles.green}></div>
             </div>
             <div style={styles.screen}>
-                <pre style={styles.terminalfont} className="terminalfont" ><strong>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__         <br />
+                <pre style={styles.terminalfont} className="terminalfont" >
+
+&nbsp;...    :::::::::::: :::.     ::::::::::..   <br />
+&nbsp;;;     ;;;'`````;;; ;;`;;    ;;;;;;;``;;;;  <br />
+[['     [[[    .n[[',[[ '[[,  [[[ [[[,/[[['  <br />
+$$      $$$  ,$$P" c$$$cc$$$c $$$ $$$$$$c    <br />
+88    .d888,888bo,_ 888   888,888 888b "88bo,<br />
+&nbsp;"YmmMMMM"" `""*UMM YMM   ""` MMM MMMM   "W" <br />
+{/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__         <br />
 &nbsp;__  __  ____      __   /\_\  _ __  <br />
 /\ \/\ \/\_ ,`\  /'__`\ \/\ \/\`'__\<br />
 \ \ \_\ \/_/  /_/\ \L\.\_\ \ \ \ \/ <br />
 &nbsp;\ \____/ /\____\ \__/.\_\\ \_\ \_\ <br />
-&nbsp;&nbsp;\/___/  \/____/\/__/\/_/ \/_/\/_/ <br />
+&nbsp;&nbsp;\/___/  \/____/\/__/\/_/ \/_/\/_/ <br /> */}
                                     
-                </strong></pre>
+               </pre>
             </div>
         </div>
     )
