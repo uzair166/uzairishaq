@@ -37,7 +37,7 @@
 .gradBorder {
     /* background-color: red; */
     /* border: solid; */
-    border-image: linear-gradient(to right, #3494e6, #ec6ead) 1 !important;
+    border-image: -webkit-linear-gradient(to right, #3494e6, #ec6ead) 1 !important;
 }
 
 .imgbg {
