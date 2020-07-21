@@ -1,0 +1,483 @@
+.perspective {
+  font-size: 5em;
+  perspective: 7em;
+  perspective-origin: 50% 50%;
+  text-align: center;
+}
+
+.bar {
+  display: inline-block;
+  width: 100%;
+  height: 0.3em;
+  margin-top: 1em;
+  position: relative;
+  transform: rotateX(60deg);
+  transform-style: preserve-3d;
+}
+
+.bar .bar-face {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(169, 169, 169, 0.2);
+  transform-origin: 50% 100%;
+}
+
+.bar .bar-face.roof {
+  transform: translateZ(0.3em);
+}
+
+.bar .bar-face.front {
+  transform: rotateX(-90deg);
+}
+
+.bar .bar-face.right {
+  left: auto;
+  right: -0.5em;
+  width: 0.3em;
+  transform: rotateX(-90deg) rotateY(90deg) translateX(0.5em);
+}
+
+.bar .bar-face.back {
+  transform: rotateX(-90deg) rotateY(0deg) translateZ(-0.3em);
+}
+
+.bar .bar-face.left {
+  width: 0.3em;
+  transform: rotateX(-90deg) rotateY(-90deg) translateX(-0.5em) translateZ(0.5em);
+}
+
+.bar .bar-face.percentage:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(236, 0, 113, 0.7);
+  transition: width 0.6s ease-in-out;
+}
+
+.bar[aria-valuenow='0'] .percentage:before {
+  width: 0%;
+}
+
+.bar[aria-valuenow='1'] .percentage:before {
+  width: 1%;
+}
+
+.bar[aria-valuenow='2'] .percentage:before {
+  width: 2%;
+}
+
+.bar[aria-valuenow='3'] .percentage:before {
+  width: 3%;
+}
+
+.bar[aria-valuenow='4'] .percentage:before {
+  width: 4%;
+}
+
+.bar[aria-valuenow='5'] .percentage:before {
+  width: 5%;
+}
+
+.bar[aria-valuenow='6'] .percentage:before {
+  width: 6%;
+}
+
+.bar[aria-valuenow='7'] .percentage:before {
+  width: 7%;
+}
+
+.bar[aria-valuenow='8'] .percentage:before {
+  width: 8%;
+}
+
+.bar[aria-valuenow='9'] .percentage:before {
+  width: 9%;
+}
+
+.bar[aria-valuenow='10'] .percentage:before {
+  width: 10%;
+}
+
+.bar[aria-valuenow='11'] .percentage:before {
+  width: 11%;
+}
+
+.bar[aria-valuenow='12'] .percentage:before {
+  width: 12%;
+}
+
+.bar[aria-valuenow='13'] .percentage:before {
+  width: 13%;
+}
+
+.bar[aria-valuenow='14'] .percentage:before {
+  width: 14%;
+}
+
+.bar[aria-valuenow='15'] .percentage:before {
+  width: 15%;
+}
+
+.bar[aria-valuenow='16'] .percentage:before {
+  width: 16%;
+}
+
+.bar[aria-valuenow='17'] .percentage:before {
+  width: 17%;
+}
+
+.bar[aria-valuenow='18'] .percentage:before {
+  width: 18%;
+}
+
+.bar[aria-valuenow='19'] .percentage:before {
+  width: 19%;
+}
+
+.bar[aria-valuenow='20'] .percentage:before {
+  width: 20%;
+}
+
+.bar[aria-valuenow='21'] .percentage:before {
+  width: 21%;
+}
+
+.bar[aria-valuenow='22'] .percentage:before {
+  width: 22%;
+}
+
+.bar[aria-valuenow='23'] .percentage:before {
+  width: 23%;
+}
+
+.bar[aria-valuenow='24'] .percentage:before {
+  width: 24%;
+}
+
+.bar[aria-valuenow='25'] .percentage:before {
+  width: 25%;
+}
+
+.bar[aria-valuenow='26'] .percentage:before {
+  width: 26%;
+}
+
+.bar[aria-valuenow='27'] .percentage:before {
+  width: 27%;
+}
+
+.bar[aria-valuenow='28'] .percentage:before {
+  width: 28%;
+}
+
+.bar[aria-valuenow='29'] .percentage:before {
+  width: 29%;
+}
+
+.bar[aria-valuenow='30'] .percentage:before {
+  width: 30%;
+}
+
+.bar[aria-valuenow='31'] .percentage:before {
+  width: 31%;
+}
+
+.bar[aria-valuenow='32'] .percentage:before {
+  width: 32%;
+}
+
+.bar[aria-valuenow='33'] .percentage:before {
+  width: 33%;
+}
+
+.bar[aria-valuenow='34'] .percentage:before {
+  width: 34%;
+}
+
+.bar[aria-valuenow='35'] .percentage:before {
+  width: 35%;
+}
+
+.bar[aria-valuenow='36'] .percentage:before {
+  width: 36%;
+}
+
+.bar[aria-valuenow='37'] .percentage:before {
+  width: 37%;
+}
+
+.bar[aria-valuenow='38'] .percentage:before {
+  width: 38%;
+}
+
+.bar[aria-valuenow='39'] .percentage:before {
+  width: 39%;
+}
+
+.bar[aria-valuenow='40'] .percentage:before {
+  width: 40%;
+}
+
+.bar[aria-valuenow='41'] .percentage:before {
+  width: 41%;
+}
+
+.bar[aria-valuenow='42'] .percentage:before {
+  width: 42%;
+}
+
+.bar[aria-valuenow='43'] .percentage:before {
+  width: 43%;
+}
+
+.bar[aria-valuenow='44'] .percentage:before {
+  width: 44%;
+}
+
+.bar[aria-valuenow='45'] .percentage:before {
+  width: 45%;
+}
+
+.bar[aria-valuenow='46'] .percentage:before {
+  width: 46%;
+}
+
+.bar[aria-valuenow='47'] .percentage:before {
+  width: 47%;
+}
+
+.bar[aria-valuenow='48'] .percentage:before {
+  width: 48%;
+}
+
+.bar[aria-valuenow='49'] .percentage:before {
+  width: 49%;
+}
+
+.bar[aria-valuenow='50'] .percentage:before {
+  width: 50%;
+}
+
+.bar[aria-valuenow='51'] .percentage:before {
+  width: 51%;
+}
+
+.bar[aria-valuenow='52'] .percentage:before {
+  width: 52%;
+}
+
+.bar[aria-valuenow='53'] .percentage:before {
+  width: 53%;
+}
+
+.bar[aria-valuenow='54'] .percentage:before {
+  width: 54%;
+}
+
+.bar[aria-valuenow='55'] .percentage:before {
+  width: 55%;
+}
+
+.bar[aria-valuenow='56'] .percentage:before {
+  width: 56%;
+}
+
+.bar[aria-valuenow='57'] .percentage:before {
+  width: 57%;
+}
+
+.bar[aria-valuenow='58'] .percentage:before {
+  width: 58%;
+}
+
+.bar[aria-valuenow='59'] .percentage:before {
+  width: 59%;
+}
+
+.bar[aria-valuenow='60'] .percentage:before {
+  width: 60%;
+}
+
+.bar[aria-valuenow='61'] .percentage:before {
+  width: 61%;
+}
+
+.bar[aria-valuenow='62'] .percentage:before {
+  width: 62%;
+}
+
+.bar[aria-valuenow='63'] .percentage:before {
+  width: 63%;
+}
+
+.bar[aria-valuenow='64'] .percentage:before {
+  width: 64%;
+}
+
+.bar[aria-valuenow='65'] .percentage:before {
+  width: 65%;
+}
+
+.bar[aria-valuenow='66'] .percentage:before {
+  width: 66%;
+}
+
+.bar[aria-valuenow='67'] .percentage:before {
+  width: 67%;
+}
+
+.bar[aria-valuenow='68'] .percentage:before {
+  width: 68%;
+}
+
+.bar[aria-valuenow='69'] .percentage:before {
+  width: 69%;
+}
+
+.bar[aria-valuenow='70'] .percentage:before {
+  width: 70%;
+}
+
+.bar[aria-valuenow='71'] .percentage:before {
+  width: 71%;
+}
+
+.bar[aria-valuenow='72'] .percentage:before {
+  width: 72%;
+}
+
+.bar[aria-valuenow='73'] .percentage:before {
+  width: 73%;
+}
+
+.bar[aria-valuenow='74'] .percentage:before {
+  width: 74%;
+}
+
+.bar[aria-valuenow='75'] .percentage:before {
+  width: 75%;
+}
+
+.bar[aria-valuenow='76'] .percentage:before {
+  width: 76%;
+}
+
+.bar[aria-valuenow='77'] .percentage:before {
+  width: 77%;
+}
+
+.bar[aria-valuenow='78'] .percentage:before {
+  width: 78%;
+}
+
+.bar[aria-valuenow='79'] .percentage:before {
+  width: 79%;
+}
+
+.bar[aria-valuenow='80'] .percentage:before {
+  width: 80%;
+}
+
+.bar[aria-valuenow='81'] .percentage:before {
+  width: 81%;
+}
+
+.bar[aria-valuenow='82'] .percentage:before {
+  width: 82%;
+}
+
+.bar[aria-valuenow='83'] .percentage:before {
+  width: 83%;
+}
+
+.bar[aria-valuenow='84'] .percentage:before {
+  width: 84%;
+}
+
+.bar[aria-valuenow='85'] .percentage:before {
+  width: 85%;
+}
+
+.bar[aria-valuenow='86'] .percentage:before {
+  width: 86%;
+}
+
+.bar[aria-valuenow='87'] .percentage:before {
+  width: 87%;
+}
+
+.bar[aria-valuenow='88'] .percentage:before {
+  width: 88%;
+}
+
+.bar[aria-valuenow='89'] .percentage:before {
+  width: 89%;
+}
+
+.bar[aria-valuenow='90'] .percentage:before {
+  width: 90%;
+}
+
+.bar[aria-valuenow='91'] .percentage:before {
+  width: 91%;
+}
+
+.bar[aria-valuenow='92'] .percentage:before {
+  width: 92%;
+}
+
+.bar[aria-valuenow='93'] .percentage:before {
+  width: 93%;
+}
+
+.bar[aria-valuenow='94'] .percentage:before {
+  width: 94%;
+}
+
+.bar[aria-valuenow='95'] .percentage:before {
+  width: 95%;
+}
+
+.bar[aria-valuenow='96'] .percentage:before {
+  width: 96%;
+}
+
+.bar[aria-valuenow='97'] .percentage:before {
+  width: 97%;
+}
+
+.bar[aria-valuenow='98'] .percentage:before {
+  width: 98%;
+}
+
+.bar[aria-valuenow='99'] .percentage:before {
+  width: 99%;
+}
+
+.bar[aria-valuenow='100'] .percentage:before {
+  width: 100%;
+}
+
+.bar.cyan .left {
+  background-color: rgba(87, 202, 244, 0.5);
+}
+
+.bar.cyan .percentage:before {
+  background: linear-gradient(to right, rgba(147, 112, 219, 0.5), rgba(240, 128, 128, 0.5));
+}
+
+.percentage:before {
+  box-shadow: 0 0.05em 0.1em rgba(255, 255, 255, 0.5);
+}
+
+[data-theme='dark'] .percentage:before {
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.25);
+}

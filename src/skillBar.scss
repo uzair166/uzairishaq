@@ -1,0 +1,111 @@
+$light-gray: darkgrey;
+$magenta: #ec0071;
+$white: #f5f5f5;
+$size: 0.3em;
+
+@mixin build-skin($color, $name) {
+    &.#{$name} {
+        // .floor {
+        //     box-shadow: 0 -0.2em 1em rgba(0, 0, 0, 0.15),
+        //         0 0.2em 0.1em -5px rgba(0, 0, 0, 0.3),
+        //         0 -0.75em 1.75em rgba($white, 0.6);
+        // }
+        .left {
+            background-color: rgba($color, 0.5);
+        }
+        .percentage:before {
+            // background-color: rgba(red, 0.5);
+            background: linear-gradient(
+                to right,
+                rgba(mediumpurple, 0.5),
+                rgba(lightcoral, 0.5)
+            );
+            // background: linear-gradient(
+            //     to right,
+            //     rgba(52, 148, 230, 0.5),
+            //     rgba(236, 110, 173, 0.5)
+            // );
+            // background-color: ;
+            // box-shadow: 0 0.05em 0.1em rgba(darkgrey, 0.5);
+        }
+    }
+}
+
+.perspective {
+    font-size: 5em; // sets the main scale size
+    perspective: 7em; // sets the perspective
+    perspective-origin: 50% 50%;
+    text-align: center;
+    // margin-top: -30%;
+    // margin-bottom: -15%;
+}
+
+.bar {
+    display: inline-block;
+    width: 100%;
+    height: $size;
+    margin-top: 1em;
+    position: relative;
+    transform: rotateX(60deg); // sets the view point
+    transform-style: preserve-3d; // perspective for the children
+    .bar-face {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(
+            $light-gray,
+            0.2
+        ); // just to see what is happening
+        transform-origin: 50% 100%;
+        &.roof {
+            transform: translateZ($size);
+        }
+        &.front {
+            transform: rotateX(-90deg);
+        }
+        &.right {
+            left: auto;
+            right: -0.5em;
+            width: $size;
+            transform: rotateX(-90deg) rotateY(90deg) translateX(0.5em);
+        }
+        &.back {
+            transform: rotateX(-90deg) rotateY(0deg) translateZ(-$size);
+        }
+        &.left {
+            width: $size;
+            transform: rotateX(-90deg) rotateY(-90deg) translateX(-0.5em)
+                translateZ(0.5em);
+        }
+        &.percentage:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 100%;
+            margin: 0;
+            background-color: rgba($magenta, 0.7);
+            transition: width 0.6s ease-in-out;
+        }
+    }
+    @for $i from 0 to 101 {
+        &[aria-valuenow='#{$i}'] {
+            .percentage:before {
+                width: $i * 1%;
+            }
+        }
+    }
+
+    @include build-skin(#57caf4, 'cyan');
+}
+
+.percentage:before {
+    box-shadow: 0 0.05em 0.1em rgba(white, 0.5);
+}
+[data-theme='dark'] .percentage:before {
+    box-shadow: 0 0.1em 0.2em rgba(black, 0.25);
+}
