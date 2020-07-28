@@ -111,7 +111,7 @@ const App = () => {
                     <Container>
                         <div className="typewriterContainer">
                             <div className="typewriter">
-                                <h1 className="header">Uzair Ishaq</h1>
+                                <h2 className="header">Uzair Ishaq</h2>
                             </div>
                         </div>
                         <br />
