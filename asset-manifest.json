@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/uzairishaq/static/css/main.9713d19b.chunk.css",
+    "main.css": "/uzairishaq/static/css/main.a7c60e67.chunk.css",
     "main.js": "/uzairishaq/static/js/main.03735a13.chunk.js",
     "main.js.map": "/uzairishaq/static/js/main.03735a13.chunk.js.map",
     "runtime-main.js": "/uzairishaq/static/js/runtime-main.002f852c.js",
@@ -9,10 +9,10 @@
     "static/js/2.56ea56d0.chunk.js": "/uzairishaq/static/js/2.56ea56d0.chunk.js",
     "static/js/2.56ea56d0.chunk.js.map": "/uzairishaq/static/js/2.56ea56d0.chunk.js.map",
     "index.html": "/uzairishaq/index.html",
-    "precache-manifest.841f1612f22a5989954b42aa2d062c34.js": "/uzairishaq/precache-manifest.841f1612f22a5989954b42aa2d062c34.js",
+    "precache-manifest.0adb33571b26be69c9f6e42a72377999.js": "/uzairishaq/precache-manifest.0adb33571b26be69c9f6e42a72377999.js",
     "service-worker.js": "/uzairishaq/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/uzairishaq/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.9713d19b.chunk.css.map": "/uzairishaq/static/css/main.9713d19b.chunk.css.map",
+    "static/css/main.a7c60e67.chunk.css.map": "/uzairishaq/static/css/main.a7c60e67.chunk.css.map",
     "static/js/2.56ea56d0.chunk.js.LICENSE.txt": "/uzairishaq/static/js/2.56ea56d0.chunk.js.LICENSE.txt",
     "static/media/App.css": "/uzairishaq/static/media/bezel.a8bcb08f.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.002f852c.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.56ea56d0.chunk.js",
-    "static/css/main.9713d19b.chunk.css",
+    "static/css/main.a7c60e67.chunk.css",
     "static/js/main.03735a13.chunk.js"
   ]
 }
