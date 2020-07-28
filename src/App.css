@@ -215,7 +215,7 @@ h5 {
     border-right: 0.2em solid gray;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
+    letter-spacing: 0.01em; /* Adjust as needed */
     /* animation: typing 1.5s steps(11, end), blink-caret 0.75s step-end infinite; */
     animation: typewriter 1s steps(11) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) 5;
@@ -227,7 +227,7 @@ h5 {
     border-right: 0.1em solid transparent;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.05em; /* Adjust as needed */
+    letter-spacing: 0.01em; /* Adjust as needed */
     /* animation: typing 1.5s steps(11, end), blink-caret 0.75s step-end infinite; */
     animation: typewriter 2s steps(25) 3.5s 1 normal both,
         blinkTextCursor 500ms steps(44) 2.5s infinite;
