@@ -20,6 +20,7 @@
     background: linear-gradient(to right, #3494e6, #ec6ead);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: typing 10;
 }
 
 .gradJumbo {
@@ -193,4 +194,80 @@
 .skillbar {
     margin-top: '-0.8em';
     margin-bottom: '-0.5em';
+}
+
+@import url('https://fonts.googleapis.com/css?family=DM+Mono');
+
+.typewriterContainer {
+    font-family: 'DM Mono', monospace;
+    font-weight: 900 !important;
+    display: inline-block;
+}
+
+.typewriterContainer h1,
+h5 {
+    font-weight: 900 !important;
+}
+
+.typewriter {
+    /* display: inline; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.2em solid gray;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    /* animation: typing 1.5s steps(11, end), blink-caret 0.75s step-end infinite; */
+    animation: typewriter 1s steps(11) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) 5;
+}
+
+.typewriter2 {
+    /* display: inline; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.1em solid transparent;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.05em; /* Adjust as needed */
+    /* animation: typing 1.5s steps(11, end), blink-caret 0.75s step-end infinite; */
+    animation: typewriter 2s steps(25) 3.5s 1 normal both,
+        blinkTextCursor 500ms steps(44) 2.5s infinite;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+        border-right-color: transparent;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: gray;
+    }
 }

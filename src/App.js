@@ -109,10 +109,17 @@ const App = () => {
             <Container fluid className=" m-0 p-0 h100">
                 <Jumbotron className="gradJumbo shadow-sm" fluid="true">
                     <Container>
-                        <h1 className="header">
-                            Software Developer, Programmer, Engineer...
-                        </h1>
-                        <h5>I like to build things :)</h5>
+                        <div className="typewriterContainer">
+                            <div className="typewriter">
+                                <h1 className="header">Uzair Ishaq</h1>
+                            </div>
+                        </div>
+                        <br />
+                        <div className="typewriterContainer">
+                            <div className="typewriter2 pt-1">
+                                <h5>I like to build things :)</h5>
+                            </div>
+                        </div>
                     </Container>
                 </Jumbotron>
             </Container>
